@@ -1,0 +1,1 @@
+start C:\Python\django\myenv-django110\Scripts\activate
