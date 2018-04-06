@@ -101,3 +101,9 @@ ENV/
 # database
 
 db.sqlite3
+
+myblog/setting.py
+
+active.bat
+
+static/
