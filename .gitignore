@@ -107,3 +107,4 @@ myblog/setting.py
 active.bat
 
 static/
+myblog/settings.py

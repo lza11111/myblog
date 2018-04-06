@@ -1,1 +1,1 @@
-start C:\Python\django\myenv-django110\Scripts\activate
+start E:\Python\django\myenv-django110\Scripts\activate
