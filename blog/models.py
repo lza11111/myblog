@@ -5,13 +5,13 @@ from django.urls import reverse
 class Category(models.Model):
     name = models.CharField(max_length = 100)
     objects = models.Manager()
-    def __str__(self):
+    def __unicode__(self):
         return self.name
 
 class Tag(models.Model):
     name = models.CharField(max_length = 100)
     objects = models.Manager()
-    def __str__(self):
+    def __unicode__(self):
         return self.name
 
 class Post(models.Model):
@@ -26,7 +26,7 @@ class Post(models.Model):
     views = models.PositiveIntegerField(default=0)
     objects = models.Manager()
 
-    def __str__(self):
+    def __unicode__(self):
         return self.title
 
     def get_absolute_url(self):
