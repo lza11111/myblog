@@ -18,6 +18,9 @@
                     <a href="{% url 'blog:tag' tag.pk %}">{{ tag.name }}</a>
                     {% endfor %}
                 </span>
+                <span>
+                    <a href="admin/blog/post/{{ post.pk }}/change">编辑</a>
+                </span>
             </div>
         </header>
         <div class="entry-content clearfix">
