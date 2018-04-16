@@ -14,18 +14,16 @@
 						</figure>
 						<h3 style="text-align:center">长的丑不说，游戏也打的菜，声音也难听，完全就是死肥宅.jpg</h3>
 						<div style="text-align:center">
-								<h2>过去</h2>
-								<p>2018年4月3日 开始学Django</p>
-								<p>2018年4月5日 第一次自己搭建博客</p>
-								<p>2018年4月6日 完成基本功能</p>
 								<p>......</p>
 								<p>......</p>
-								<h2>将来</h2>
-								<p>退役(0/1)</p>
-								<p>毕业(0/1)</p>
-								<p>月收入(/????)</p>
-								<p>攒钱(/????)</p>
-								<p>找到女朋友(0/1)</p>
+								<p>......</p>
+								<p>......</p>
+								<p>......</p>
+								<p>......</p>
+								<h2>定个小目标</h2>
+								{% for quote in quote_list %}
+								<p>{{ quote.title }}({{ quote.now }}/{{ quote.aim }})</p>
+								{% endfor %}
 								<p></p>
 						</div>
 						

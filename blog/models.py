@@ -39,3 +39,15 @@ class Post(models.Model):
     class Meta:
         ordering = ['-created_time']
 
+class Quote(models.Model):
+    title = models.CharField(max_length = 100)
+    now = models.PositiveIntegerField(default = 0)
+    aim = models.PositiveIntegerField(default = 1)
+    complete_time = models.DateTimeField()
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        ordering = ['-complete_time']
+

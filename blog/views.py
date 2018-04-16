@@ -2,15 +2,20 @@ from django.shortcuts import render,get_object_or_404
 from django.http import HttpResponse
 from django.views.generic import ListView,DetailView
 import markdown
-from .models import Post,Category,Tag
+from .models import Post,Category,Tag,Quote
 from comments.forms import CommentForm
 
 def fullwidth(request):
     post_list = Post.objects.all()
     return render(request,'blog/full-width.html',context={'post_list':post_list})
 
-def about(request):
-    return render(request,'blog/about.html')
+class AboutView(ListView):
+    model = Quote
+    template_name = 'blog/about.html'
+    context_object_name = 'quote_list'
+
+# def about(request):
+#     return render(request,'blog/about.html')
     
 class IndexView(ListView):
     model = Post
