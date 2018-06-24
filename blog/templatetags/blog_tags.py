@@ -23,4 +23,4 @@ def get_tags():
 
 @register.simple_tag
 def get_nowtime():
-    return datetime.datetime.now().strftime("- %b %d %Y %H:%M:%S") #.format(y='年',m='月',d='日')
+    return datetime.datetime.now().strftime("- %b %d %Y %H:%M:%S")

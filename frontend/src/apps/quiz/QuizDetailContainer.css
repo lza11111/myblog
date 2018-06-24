@@ -1,0 +1,19 @@
+.quizdetailcontainer{
+    margin: 0px auto;
+    width: 80%;
+}
+
+.quiztitle{
+    text-align: center;
+    margin: 20px 0 0;
+}
+.quizdescrip{
+    text-align: center;
+}
+
+.buttoncontainer{
+    text-align: center;
+}
+.submitbutton{
+    margin: 10px auto;
+}
