@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 from django.contrib import admin
-from models import Quiz,Problem,ProblemOption
+from quiz.models import Quiz,Problem,ProblemOption
 # Register your models here.
 
 class QuizAdmin(admin.ModelAdmin):
